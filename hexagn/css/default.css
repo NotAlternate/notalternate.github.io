@@ -97,14 +97,13 @@ hr {
 
 
 .link-s {
-    position: fixed;
+    position: sticky;
     top: 0;
     width: 100%
 }
 .link-s + .main {
-    padding-top: 102px;
+    padding-top: 140px;
 }
-
 
 .code {
     background-color: #191919;

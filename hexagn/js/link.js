@@ -1,9 +1,9 @@
-window.onscroll = function() {myFunction()};
+window.onscroll = function() {set()};
 
 var link = document.getElementById("link");
 var sticky = link.offsetTop;
 
-function myFunction() {
+function set() {
     if (window.pageYOffset > sticky) {
         link.classList.add("link-s");
     } else {
