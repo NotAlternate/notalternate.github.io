@@ -4,19 +4,20 @@
         <link rel="stylesheet" href="css/default.css">
         <script src="js/index.js"></script>
         <title>Hexagn - Home</title>
-        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8" name="viewport" content="width=device-width", initial-scale="1.0">
     </head>
     <body>
         <div class="logo">
             <img src="img/logo-dark.png" alt="logo" width="20" height="20">
-            <a href=home.html>Hexagn</a>
+            <a href=index.html>Hexagn</a>
         </div>
-        <div class="link">
-            <a href="documentation/main.html"><img src="img/icons/document.png" alt="document" class="t"> Documentation</a>
-			<a href="installation.html"><img src="img/icons/install.png" alt="install" class="t"> Installation</a>
-			<a href="https://github.com/NotAlternate/Hexagn"><img src="img/icons/repository.png" alt="repository" class="t"> Repository</a>
-			<a href="about.html"><img src="img/icons/info.png" alt="info" class="t"> About</a>
-        </div>
+        <div class="link" id="link">
+            <a href="documentation/index.html"><img src="img/icons/document.png" alt="document"> Documentation</a>
+			<a href="installation.html"><img src="img/icons/install.png" alt="install"> Installation</a>
+			<a href="https://github.com/NotAlternate/Hexagn"><img src="img/icons/repository.png" alt="repository"> Repository</a>
+            <a href="releases.html"><img src="img/icons/version.png" alt="version"> Releases</a>
+            <a href="feature.html"><img src="img/icons/status.png" alt="status"> Feature status</a>
+			<a href="about.html"><img src="img/icons/info.png" alt="info"> About</a>
         </div>
         <div class="main">
             <h1 style="text-align: center;">Hexagn</h1>
@@ -44,7 +45,7 @@
                 The sum of a and b is: 15
             </div>
             <br><br>
-            <h1>Cross-Platform</h1>
+            <h1>Cross-Platform <img src="img/icons/windows.png" alt="windows" width="24" height="24"><img src="img/icons/macos.png" alt="macos" width="24" height="24"><img src="img/icons/linux.png" alt="linux" width="24" height="24"></h1>
             <p>
                 Hexagn is compiled to <b>URCL</b> which is then emulated on platforms like:<br>
                 <ul>
@@ -53,7 +54,8 @@
                     <li>Mobile (Android, iOS)</li>
                 </ul>
             </p>
-            <br><hr><br>
+        </div>
+        <div class="dark">
             <h1 style="text-align: center;">What is URCL?</h1>
             <p>
                 URCL stands for <b>Universal Reduced (or Redstone) Computer Language</b>, made to be compiled to machine code for Minecraft Redstone Computers.<br><br>
@@ -61,12 +63,18 @@
                 Following its conception, the group worked hard and developed the standard we know currently as <b>URCL</b> as well as several tools to assist those who wish to use it such as this <a>Online URCL Emulator</a><br><br>
                 While the initial idea behind <b>URCL</b> was more concrete, today the idea of <b>URCL</b> isn't something the community can put into words as easily. It serves to bridge the gap between <b>ISAs</b> as well as an intermediate language for higher level language compilers.
             </p>
-            <br><hr><br>
+        </div>
+        <div class="main">
             <h1 style="text-align: center;">Credits to</h1>
             <p style="text-align: center;">
                 <img src="img/icons8.png" alt="icons8" widht="100" height="100"><br>
                 <b>Icons8</b><br>
                 For the icons used in the website.
+            </p><br>
+            <p style="text-align: center;">
+                <img src="img/jetbrains.png" alt="jetbrains" widht="100" height="100"><br>
+                <b>JetBrains</b><br>
+                For the <b>JetBrains Mono</b> font used in the website.
             </p>
         </div>
         <div class="end">
@@ -75,5 +83,6 @@
             Official repository: <a href="https://github.com/NotAlternate/Hexagn">Go to Repository</a><br>
             Official Discord server: <a>Discord server invite</a><br>
         </div>
+        <script src="js/link.js"></script>
     </body>
 </html>

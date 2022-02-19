@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/default.css">
+        <script src="js/default.js"></script>
+        <title>Hexagn - Installation</title>
+    </head>
+    <body>
+        <div class="logo">
+            <img src="img/logo-dark.png" alt="logo" width="20" height="20">
+            <a href=index.html>Hexagn</a>
+        </div>
+        <div class="link" id="link">
+            <a href="documentation/index.html"><img src="img/icons/document.png" alt="document"> Documentation</a>
+			<a href="installation.html"><img src="img/icons/install.png" alt="install"> Installation</a>
+			<a href="https://github.com/NotAlternate/Hexagn"><img src="img/icons/repository.png" alt="repository"> Repository</a>
+            <a href="releases.html"><img src="img/icons/version.png" alt="version"> Releases</a>
+            <a href="feature.html"><img src="img/icons/status.png" alt="status"> Feature status</a>
+			<a href="about.html"><img src="img/icons/info.png" alt="info"> About</a>
+        </div>
+        <div class="main">
+            <h1>Installation</h1>
+            <h2>Required packages</h2>
+            The required packages for Hexagn to compile are:
+            <ul>
+                <li>G++ (or Clang++ for MacOS Homebrew)</li>
+                <li>Make</li>
+            </ul>
+            If the required packages are not installed in your system, there are steps on how to install the required packages.<br>
+            For linux, G++ and Make should be pre-installed by default, if not there are steps on how to install them.<br>
+            <h2><img src="img/icons/windows.png" alt="windows" width="24" height="24"> Installing in Windows</h2>
+                The Installation of Hexagn in Windows is not available yet :(
+            <br><br><hr>
+            <h2><img src="img/icons/macos.png" alt="macos" width="24" height="24"> Installing in MacOS</h2>
+                To install the required package, run the following commands in the terminal depending on your package manager<br><br>
+                <b id="code">Using Homebrew&nbsp;</b>
+                <div class="code">
+                    $ brew update<br>
+                    $ brew install llvm         # Clang++
+                </div><br><br>
+                <b id="code">Using MacPorts&nbsp;</b>
+                <div class="code">
+                    $ sudo port selfupdate<br>
+                    $ sudo port install gcc11   # GCC
+                </div><br>
+                <h3>Getting the compiler</h3>
+                To get the version of the repository, go to <a href="releases.html" style="text-decoration: underline;">this page</a> and download your desired version.<br>
+                After installing the <b>.zip</b> file, extract it and go to the next step.<br><br>
+                <h3>Installing Hexagn</h3>
+                After extracting the repository, go to the directory by using <b>cd [directory]</b> or access it via your file manager and opening in the terminal.<br><br>
+                <b id="code">Run this command when you are in the directory&nbsp;</b>
+                <div class="code">
+                    $ make CXX=clang++&nbsp;&nbsp;# Run this only if you installed via Homebrew<br>
+                    $ make&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Run this only if you installed via MacPorts
+                </div><br><br>
+                If you did all the process correctly, Hexagn should be installed<br><br>
+                <b id="code">Check with&nbsp;</b>
+                <div class="code">
+                    $ hexagn --version
+                </div>
+            <br><br><hr>
+            <h2><img src="img/icons/linux.png" alt="linux" width="24" height="24"> Installing in Linux</h2>
+                If the required packages are not pre-installed in your linux distro, run these command depending on your package manager:<br><br>
+                <b id="code">APT - Debian, Ubuntu, Kali, etc&nbsp;</b>
+                <div class="code">
+                    $ sudo apt-get upgrade<br>
+                    $ sudo apt-get install g++
+                </div><br><br>
+                <b id="code">DNF/YUM - Fedora, RHEL, CentOS, OpenSUSE, etc&nbsp;</b>
+                <div class="code">
+                    $ sudo dnf upgrade<br>
+                    $ sudo dnf install gcc-c++<br><br>
+
+                    # For yum:<br>
+                    $ sudo yum upgrade<br>
+                    $ sudo yum install gcc-c++
+                </div><br><br>
+                <b id="code">PACMAN - Arch, Manjaro, etc&nbsp;</b>
+                <div class="code">
+                    $ sudo pacman -Syu<br>
+                    $ sudo pacman -Sy g++
+                </div><br><br>
+                <h3>Getting the compiler</h3>
+                To get the version of the repository, go to <a href="releases.html" style="text-decoration: underline;">this page</a> and download your desired version.<br>
+                After installing the <b>.zip</b> file, extract it and go to the next step.<br><br>
+                <h3>Installing Hexagn</h3>
+                After extracting the repository, go to the directory by using <b>cd [directory]</b> or access it via your file manager and opening in the terminal.<br><br>
+                <b id="code">Run this command when you are in the directory&nbsp;</b>
+                <div class="code">
+                    $ make
+                </div><br><br>
+                If you did all the process correctly, Hexagn should be installed<br><br>
+                <b id="code">Check with&nbsp;</b>
+                <div class="code">
+                    $ hexagn --version
+                </div>
+        </div>
+        <div class="end">
+            <b>Hexagn</b> - <b>A simple statically typed programming language</b><br><br>
+            A collaboration project between: <a href="https://github.com/NotAlternate">NotAlternate</a>, <a href="https://github.com/GameBuilder202">GameBuilder202</a> and <a href="https://github.com/emm312">emm312</a><br>
+            Official repository: <a href="https://github.com/NotAlternate/Hexagn">Go to Repository</a><br>
+            Official Discord server: <a>Discord server invite</a><br>
+        </div>
+        <script src="js/link.js"></script>
+    </body>
+</html>

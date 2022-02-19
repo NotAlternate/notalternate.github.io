@@ -10,19 +10,19 @@
 
 body {
     background-color: #E0E0E0;
-    color: #000000;
+    color: #E0E0E0;
     margin: 0;
     font-size: 20px;
     font-family: Sailec;
 }
 a {
-    color: #000000;
+    color: #E0E0E0;
     text-decoration: none;
 }
 button {
     border-radius: 4px 4px 0px 0px;
     box-shadow: 0px 0px 10px #191919;
-    background-color: #191919;
+    background-color: #E0E0E0;
     color: #FFFFFF;
     padding: 17px;
     font-size: 20px;
@@ -32,11 +32,11 @@ button {
 }
 button:hover {
     background-color: #FFFFFF;
-    color: #191919;
+    color: #E0E0E0;
     box-shadow: 0px 0px 10px #FFFFFF;
 }
 hr {
-    background-color: #000000;
+    background-color: #E0E0E0;
     border: solid 1px #000000;
     box-shadow: 0px 0px 10px #000000;
 }
@@ -45,7 +45,7 @@ hr {
 #code {
     border-radius: 4px 4px 0px 0px;
     box-shadow: 0px 0px 10px #191919;
-    background-color: #191919;
+    background-color: #E0E0E0;
     font-family: JetbrainsMono;
     color: #FFFFFF;
     padding: 10px;
@@ -53,7 +53,7 @@ hr {
 
 .link {
 	overflow: hidden;
-    background-color: #191919;
+    background-color: #E0E0E0;
 	box-shadow: 0px 0px 10px #191919;
     transition: 0.3s;
 }
@@ -70,8 +70,8 @@ hr {
 	transition: 0.3s;
 }
 .link a:hover {
-    border: solid 4px #E0E0E0;
-	box-shadow: 0px 0px 4px #E0E0E0;
+    border: solid 4px #191919;
+	box-shadow: 0px 0px 4px #191919;
 }
 .link img {
     width: 20px;
@@ -87,7 +87,7 @@ hr {
 	background-image: linear-gradient(to right, magenta , dodgerblue);
 }
 .logo a {
-	color: #000000;
+	color: #E0E0E0;
 }
 
 
@@ -107,7 +107,7 @@ hr {
 
 
 .code {
-    background-color: #191919;
+    background-color: #E0E0E0;
     color: #FFFFFF;
     font-family: JetbrainsMono;
     padding: 14px;
@@ -123,7 +123,7 @@ hr {
 
 .dark {
     box-shadow: 0px 0px 10px #191919;
-    background-color: #191919;
+    background-color: #E0E0E0;
     color: #E0E0E0;
     padding: 140px;
 }
@@ -134,7 +134,7 @@ hr {
 
 .end {
     box-shadow: 0px 0px 10px #191919;
-    background-color: #191919;
+    background-color: #E0E0E0;
     color: #D0D0D0;
     padding: 100px;
 }

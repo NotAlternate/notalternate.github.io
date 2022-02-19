@@ -20,7 +20,7 @@ a {
     text-decoration: none;
 }
 button {
-    border-radius: 4px 4px 0px 0px;
+    border-radius: 10px 10px 0px 0px;
     box-shadow: 0px 0px 10px #191919;
     background-color: #191919;
     color: #FFFFFF;
@@ -43,7 +43,7 @@ hr {
 
 
 #code {
-    border-radius: 4px 4px 0px 0px;
+    border-radius: 10px 10px 0px 0px;
     box-shadow: 0px 0px 10px #191919;
     background-color: #191919;
     font-family: JetbrainsMono;
@@ -82,12 +82,11 @@ hr {
 .logo {
     text-align: center;
     padding: 14px;
-    background-color: #B720E9;
-	color: #FFFFFF;
-	background-image: linear-gradient(to right, magenta , dodgerblue);
+    background-color: #191919;
+	color: #E0E0E0;
 }
 .logo a {
-	color: #000000;
+	color: #E0E0E0;
 }
 
 
@@ -111,7 +110,7 @@ hr {
     color: #FFFFFF;
     font-family: JetbrainsMono;
     padding: 14px;
-    border-radius: 0px 4px 4px 4px;
+    border-radius: 0px 10px 10px 10px;
     box-shadow: 0px 0px 10px #191919;
 }
 .code a {
