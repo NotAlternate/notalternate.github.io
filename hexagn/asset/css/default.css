@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=IBM+Plex+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
+@font-face {
+  font-family: "Cascadia";
+  src: url("../ttf/CascadiaCode.ttf");
+}
+@font-face {
+  font-family: "Mononoki";
+  src: url("../ttf/Mononoki.ttf");
+}
+html {
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+body {
+  font-family: "Mononoki", monospace;
+  background-color: #000020;
+  line-height: 1.7;
+  font-size: 16px;
+  color: #FFFFFF;
+  margin: 0;
+}
+body a {
+  text-decoration: none;
+  padding-right: 5px;
+  color: #E0E0E0;
+  padding-left: 5px;
+  transition: 0.2s;
+}
+body a:hover {
+  text-shadow: 0px 0px 10px #9966E7;
+  padding-right: 20px;
+  padding-left: 20px;
+  color: #9966E7;
+}
+body button {
+  font-family: "Mononoki", monospace;
+  box-shadow: 0px 0px 10px #000010;
+  background-color: #000010;
+  border-radius: 0px;
+  transition: 0.3s;
+  font-size: 16px;
+  color: #FFFFFF;
+  padding: 17px;
+  border: none;
+}
+body button:hover {
+  box-shadow: 0px 0px 10px #9966E7;
+  background-color: #9966E7;
+  padding: 17px 30px;
+}
+body iframe {
+  box-shadow: 0px 0px 10px #FFFFFF;
+  background-color: #FFFFFF;
+  padding: 10px;
+  border: none;
+}
+body hr {
+  background-color: #FFFFFF;
+  width: 90%;
+}
+body td {
+  padding: 50px;
+}
+
+.categories {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.main {
+  padding: 86px;
+}
+
+.invert {
+  padding: 86px;
+  background-color: #E0E0E0;
+  padding-bottom: 10px;
+  color: #000020;
+  padding-top: 10px;
+}
+.invert a {
+  color: #000020;
+}
+
+#code {
+  font-family: "Mononoki", monospace;
+  border-radius: 5px 5px 0px 0px;
+  background-color: #E0E0E0;
+  color: #000020;
+  padding: 10px;
+}
+
+.code {
+  background-color: rgba(224, 224, 224, 0.2);
+  font-family: "Mononoki", monospace;
+  border-radius: 0px;
+  color: #FFFFFF;
+  padding: 10px;
+  padding-top: 17px;
+}
+
+.link {
+  box-shadow: 0px 0px 10px #FFFFFF;
+  background-color: #FFFFFF;
+  overflow: hidden;
+  transition: 0.3s;
+  font-size: 16px;
+  padding: 10px;
+}
+.link:hover {
+  box-shadow: none;
+  opacity: 100%;
+}
+.link a {
+  float: left;
+  text-align: center;
+  margin: auto;
+  padding: 4px 10px;
+  text-decoration: none;
+  text-shadow: none;
+  color: #000010;
+  transition: 0.3s;
+}
+.link a:hover {
+  padding: 4px 20px;
+  text-shadow: 0 0 10px #A0A0A0;
+}
+
+.link-s {
+  visibility: visible;
+  position: sticky;
+  transition: 0.3s;
+  opacity: 60%;
+  width: 100%;
+  top: 0;
+}
+.link-s + .main {
+  padding-top: 86px;
+}
+
+.sel {
+  padding: 2px;
+  background-color: #E0E0E0;
+  padding-right: 5px;
+  padding-left: 5px;
+  color: #000020;
+}
+
+.sel-inv {
+  padding: 2px;
+  background-color: #000020;
+  padding-right: 5px;
+  padding-left: 5px;
+  color: #E0E0E0;
+}
+
+.footer {
+  background-image: url("../img/background.png");
+  background-repeat: no-repeat;
+  background-position: 100%;
+  padding: 86px;
+}
+
+/*# sourceMappingURL=default.css.map */

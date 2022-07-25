@@ -1,0 +1,12 @@
+textarea {
+  border: none;
+  resize: none;
+  width: 100%;
+  height: 16.5em;
+  overflow: hidden;
+}
+textarea:focus {
+  outline: none;
+}
+
+/*# sourceMappingURL=compiler.css.map */

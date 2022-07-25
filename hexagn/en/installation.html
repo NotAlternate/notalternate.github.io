@@ -1,0 +1,189 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="icon" type="image/x-icon" href="../asset/img/hexagn.png">
+        <link rel="stylesheet" href="../asset/css/default.css">
+        <script src="../asset/js/default.js"></script>
+        <title>Hexagn - Installation</title>
+        <meta charset="UTF-8" name="viewport" content="width=device-width", initial-scale="1.0">
+    </head>
+    <body>
+        <div class="categories">
+            <a href="index.html">Home</a> <b class="sel">Installation</b> <a href="releases.html">Releases</a> <!--<a href="compiler.html">Online-compiler</a>--> <a href="about.html">About</a> <a>Link-to-repository</a>
+        </div>
+        <div class="main">
+            <h1>Index</h1>
+            <ul type="circle">
+                <li>
+                    <a href="#installation">Installation</a>
+                    <ul type="circle">
+                        <li><a href="#required-packages">Required packages</a></li>
+                        <li>
+                            Installing in
+                            <ul type="circle">
+                                <li><a href="#windows">Windows</a></li>
+                                <li><a href="#macos">MacOS</a></li>
+                                <li><a href="#linux">Linux</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#writting-a-basic-program">Writing a basic program</a>
+                    <ul type="circle">
+                        <li><a href="#programming">Programming</a></li>
+                        <li><a href="#compiling">Compiling</a></li>
+                        <li><a href="#running">Running</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="invert">
+            <h1 id="installation">Installation</h1>
+            <h2 id="required-packages">Required packages</h2>
+            The required packages for Hexagn to compile are:
+            <ul>
+                <li>G++ or MSYS2 MinGW for Windows (or Clang++ for MacOS Homebrew)</li>
+                <li>Make</li>
+            </ul>
+            If the required packages are not installed in your system, there are steps on how to install the required packages.<br>
+            For linux, G++ and Make should be pre-installed by default, if not there are steps on how to install them.<br>
+            For Windows, MSYS2 MinGW is not pre-installed, there are steps on how to install it.<br><br>
+            <h3>NOTE</h3>
+                If you compiled Hexagn with <b class="sel-inv">MSYS2 MinGW</b>, you should use it to compile any <b class="sel-inv">.hxgn</b> files since running the <b class="sel-inv">.exe</b> directly will lead to errors<br>
+        </div>
+        <div class="main">
+            <h2 id="windows">Installing in Windows</h2>
+                To have the required packages, You could install <b class="sel">MSYS2 MinGW</b> which can be installed from <a href="https://www.msys2.org/" style="text-decoration: underline;">https://www.msys2.org/</a>.<br>
+                <h3>Getting the compiler</h3>
+                After installing <b class="sel">MSYS2 MinGW</b>, get your desired version of the compiler from <a href="releases.html" style="text-decoration: underline;">this page</a>.<br>
+                After installing the <b class="sel">.zip</b> file, extract it and go to the next step.
+                <h3>Installing Hexagn</h3>
+                After extracting the repository, go to the directory by using <b class="sel">cd /c/[directory]</b> in <b class="sel">MSYS2 MinGW</b> or access it via File explorer and opening with <b class="sel">MSYS2 MinGW</b> (.exe files are located at <b class="sel">C:\msys2\</b> ).<br><br><br>
+                <b id="code">Lets say the repository is located at C:\Users\NotAlternate\Downloads\Hexagn this is what you should run</b>
+                <div class="code">
+                    $ cd /c/Users/NotAlternate/Downloads/Hexagn<br>
+                </div><br><br>
+                <b id="code">Run this command when you are in the directory&nbsp;</b>
+                <div class="code">
+                    $ make
+                </div><br><br>
+                If you did all the process correctly, Hexagn should be installed<br><br><br>
+                <b id="code">Check with&nbsp;</b>
+                <div class="code">
+                    $ hexagn --version
+                </div><br><br>
+            <br><hr><br>
+            <h2 id="macos">Installing in MacOS</h2>
+                To install the required packages, run the following commands in the terminal depending on your package manager<br><br>
+                <b id="code">Using Homebrew&nbsp;</b>
+                <div class="code">
+                    $ brew update<br>
+                    $ brew install llvm         # Clang++
+                </div><br><br>
+                <b id="code">Using MacPorts&nbsp;</b>
+                <div class="code">
+                    $ sudo port selfupdate<br>
+                    $ sudo port install gcc11   # GCC
+                </div><br>
+                <h3>Getting the compiler</h3>
+                To get the version of the repository, go to <a href="releases.html" style="text-decoration: underline;">this page</a> and download your desired version.<br>
+                After installing the <b class="sel">.zip</b> file, extract it and go to the next step.<br><br>
+                <h3>Installing Hexagn</h3>
+                After extracting the repository, go to the directory by using <b class="sel">cd [directory]</b> or access it via your file manager and opening in the terminal.<br><br>
+                <b id="code">Run this command when you are in the directory&nbsp;</b>
+                <div class="code">
+                    $ make CXX=clang++&nbsp;&nbsp;# Run this only if you installed via Homebrew<br>
+                    $ make&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Run this only if you installed via MacPorts
+                </div><br><br>
+                If you did all the process correctly, Hexagn should be installed<br><br>
+                <b id="code">Check with&nbsp;</b>
+                <div class="code">
+                    $ hexagn --version
+                </div>
+            <br><hr><br>
+            <h2 id="linux">Installing in Linux</h2>
+                If the required packages are not pre-installed in your linux distro, run these command depending on your package manager:<br><br>
+                <b id="code">APT - Debian, Ubuntu, Kali, etc&nbsp;</b>
+                <div class="code">
+                    $ sudo apt-get upgrade<br>
+                    $ sudo apt-get install g++
+                </div><br><br>
+                <b id="code">DNF/YUM - Fedora, RHEL, CentOS, OpenSUSE, etc&nbsp;</b>
+                <div class="code">
+                    $ sudo dnf upgrade<br>
+                    $ sudo dnf install gcc-c++<br><br>
+
+                    # For yum:<br>
+                    $ sudo yum upgrade<br>
+                    $ sudo yum install gcc-c++
+                </div><br><br>
+                <b id="code">PACMAN - Arch, Manjaro, etc&nbsp;</b>
+                <div class="code">
+                    $ sudo pacman -Syu<br>
+                    $ sudo pacman -Sy g++
+                </div><br><br>
+                <h3>Getting the compiler</h3>
+                To get the version of the repository, go to <a href="releases.html" style="text-decoration: underline;">this page</a> and download your desired version.<br>
+                After installing the <b class="sel">.zip</b> file, extract it and go to the next step.<br><br>
+                <h3>Installing Hexagn</h3>
+                After extracting the repository, go to the directory by using <b class="sel">cd [directory]</b> or access it via your file manager and opening in the terminal.<br><br>
+                <b id="code">Run this command when you are in the directory&nbsp;</b>
+                <div class="code">
+                    $ make
+                </div><br><br>
+                If you did all the process correctly, Hexagn should be installed<br><br>
+                <b id="code">Check with&nbsp;</b>
+                <div class="code">
+                    $ hexagn --version
+                </div>
+            <br><hr><br>
+            <h1 id="writting-a-basic-program">Writting a basic program</h1>
+            This step is optional, this step is to show you how to use the compiler.<br><br>
+            <h2 id="programming">Programming</h2>
+            To make a basic <b class="sel">Hello, World!</b>, you can use your desired text editor.<br><br>
+            In Windows you can use <b class="sel">Notepad</b><br>
+            In MacOS you can use <b class="sel">TextEdit</b><br>
+            In Linux you can use <b class="sel">GNU Nano</b> or <b class="sel">Vim</b> (if you are familiar with it)<br><br>
+            You can paste the code below or program one yourself.<br><br><br>
+            <b id="code">Basic Hello, World!&nbsp;</b>
+            <div class="code">
+                int32 main() {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;println("Hello, World!");<br>
+                }<br>
+            </div><br>
+            Let's save the file as <b class="sel">hello-world.hxgn</b> and go to the next step.<br><br>
+            <h2 id="compiling">Compiling</h2>
+            <h3>Note</h3>
+            If you compiled <b class="sel">Hexagn</b> using <b class="sel">MSYS2 MinGW</b>, open it and go to the directory.<br><br><br>
+            <b id="code">Lets say the file is located at C:\Users\NotAlternate\Documents\hello-world.hxgn this is what you should run</b>
+            <div class="code">
+                $ cd /c/Users/NotAlternate/Documents<br>
+            </div><br><hr><br>
+            Let's compile the file by using the compiler and save it as <b class="sel">hello-world.urcl</b><br>
+            (Note that the compiler can only compile <b class="sel">.hxgn</b> and save it as <b class="sel">.urcl</b> ).<br><br><br>
+            <b id="code">Compiling the file</b>
+            <div class="code">
+                $ hexagn hello-world.hxgn -o hello-world.urcl<br>
+            </div><br>
+            If you saved it on a different filename, you can use <b class="sel">hexagn input-filename.hxgn -o output-filename.urcl</b>
+            <h2 id="running">Running</h2>
+            This step needs something to run <b class="sel">URCL</b>, you can use <b class="sel">EURCL (Emulator for URCL)</b> or <b class="sel">URCX (URCL Explorer)</b>.<br><br>
+            <b class="sel">EURCL</b> can be found in <a href="../eurcl/index.html" style="text-decoration: underline;">this page</a>.<br>
+            <b class="sel">URCX</b> can be found in <a href="https://bramotte.github.io/urcl-explorer" style="text-decoration: underline;">this page</a>.<br><br><br>
+            <b id="code">Running the file in EURCL</b>
+            <div class="code">
+                $ eurcl hello-world.urcl<br>
+            </div><br>
+            You can add some flags to the command line to change the behavior of the emulator.<br><br>
+            <h3>Running in URCX (URCL Explorer)</h3>
+            Go to <a href="https://bramotte.github.io/urcl-explorer" style="text-decoration: underline;">this page</a> and open/paste the file you want to run.<br>
+            Click <b class="sel">Compile</b> and your <b class="sel">.urcl</b> file will run.
+        </div>
+        <footer class="footer">
+            <h1>The end?</h1>
+            Join our official <a href="https://discord.gg/MFENczgQX5" style="text-decoration:underline;">Discord server</a> for Hexagn
+        </footer>
+    </body>
+</html>

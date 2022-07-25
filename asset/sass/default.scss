@@ -1,0 +1,90 @@
+@import "font";
+
+$white: #FFFFFF;
+$black: #000010;
+$white-alt: #E0E0E0;
+$black-alt: #000020;
+$accent: #9966E7;
+
+@mixin box-shadow($color) { box-shadow: 0px 0px 10px $color; }
+@mixin text-shadow($color) { text-shadow: 0px 0px 10px $color; }
+
+html { overflow: hidden; overflow-y: scroll; }
+body {
+    font-family: 'Cerebri Sans', sans-serif;
+    background-color: $black-alt;
+    line-height: 1.7;
+    font-size: 20px;
+    color: $white;
+    margin: 0;
+    a {
+        text-decoration: none;
+        padding-right: 5px;
+        color: $white-alt;
+        padding-left: 5px;
+        transition: 0.2s;
+        &:hover {
+            @include text-shadow($accent);
+            padding-right: 20px;
+            padding-left: 20px;
+            color: $accent;
+        }
+    }
+    button {
+        font-family: 'Cerebri Sans', sans-serif;
+        @include box-shadow($black);
+        background-color: $black;
+        border-radius: 0px;
+        transition: 0.3s;
+        font-size: 16px;
+        color: $white;
+        padding: 17px;
+        border: none;
+        &:hover {
+            @include box-shadow($accent);
+            background-color: $accent;
+            padding: 17px 30px;
+        }
+    }
+    hr {
+        background-color: $white;
+        width: 90%;
+    }
+    img { @include box-shadow($black); border-radius: 5px; }
+    table { width: 100% }
+    td { padding: 20px; }
+}
+
+.categories { background-color: rgba(224, 224, 224, 0.2); text-align: center; padding: 20px; }
+.main { padding: 86px; }
+
+.invert {
+    padding: 86px;
+    background-color: $white-alt;
+    padding-bottom: 10px;
+    color: $black-alt;
+    padding-top: 10px;
+    a { color: $black-alt; }
+}
+
+.sel {
+    padding: 2px;
+    background-color: $white-alt;
+    padding-right: 5px;
+    padding-left: 5px;
+    color: $black-alt;
+}
+.sel-inv {
+    padding: 2px;
+    background-color: $black-alt;
+    padding-right: 5px;
+    padding-left: 5px;
+    color: $white-alt;
+}
+
+.container {
+    background-color: $white-alt;
+    border-radius: 5px;
+    color: $black;
+    padding: 10px;
+}
